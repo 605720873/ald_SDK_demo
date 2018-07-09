@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/page1/index",
+    "pages/page2/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "plugins": {
+    "tencentvideo": {
+      "version": "1.1.1",
+      "provider": "wxa75efa648b60994b"
+    }
+  }
+}

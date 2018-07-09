@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view class="container">
+
+  <view class="usermotto">
+    <text class="user-motto">当前为Page1页面</text>
+  </view>
+    <view class="title">使用微信插件，SDK接入Demo</view>
+  <view class="txt">
+    <view class="list">
+      <view>1.需要在ald-stat-conf.js中配置</view>
+      <view>exports.plugin = true;</view>
+    </view>
+    <view class='list'>
+      <view>2.在app.js中引入</view>
+      <view>const App = require('./utils/sdk/ald-stat.js').App</view>
+    </view>
+    <view class="list">
+      <view>3.在每个页面中中引入</view>
+      <view>const Page = require('../../utils/sdk/ald-stat.js').Page</view>
+    </view>
+    <view class="list">
+      <view>4.检查是否接入成功</view>
+      <view>在控制台，NetWork中查看有没有网络请求产生</view>
+    </view>
+  </view>
+  <button bindtap='goCustom'>去自定义事件示例页</button>
+</view>

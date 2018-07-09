@@ -1,0 +1,8 @@
+<!--pages/page2/index.wxml-->
+<view class="container">
+  <text class="user-motto">当前页为Page2页</text>
+  <view class="txt">点击下面按钮会触发自定义事件</view>
+  <button bindtap='Custom'>自定义事件示例</button>
+  <view class="txt">检查自定义事件是否成功上报,可在当前项目中的img文件夹中查看大图哦!</view>
+  <image src='../../img/Custom.png'></image>
+</view>
