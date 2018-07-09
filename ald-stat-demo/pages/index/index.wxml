@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+    <view class="">当前为Index页面</view>
+  </view>
+  <view class="usermotto">
+    <view class="title">常规小程序，SDK接入Demo</view>
+  </view>
+  <view class="txt">
+    <view class="list">
+      <view>1.需要在ald-stat-conf.js中配置</view>
+      <view>exports.plugin = false;</view>
+    </view>
+    <view class='list'>
+      <view>2.在app.js中引入</view>
+      <view>const ald = require('./utils/sdk/ald-stat.js')</view>
+    </view>
+
+    <view class="list">
+      <view>3.检查是否接入成功</view>
+      <view>在控制台，NetWork中查看有没有网络请求产生</view>
+    </view>
+  </view>
+  <button bindtap='goPage1'>去page1页面</button>
+
+</view>
